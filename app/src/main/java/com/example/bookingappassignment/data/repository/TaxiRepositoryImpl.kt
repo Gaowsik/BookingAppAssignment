@@ -1,10 +1,9 @@
 package com.example.bookingappassignment.data.repository
 
-import android.location.Location
 import com.example.bookingappassignment.data.model.Driver
 import com.example.bookingappassignment.data.source.DriverDataSource
 import com.example.bookingappassignment.data.source.LocationDataSource
-import com.example.bookingappassignment.data.util.DistanceCalculator
+import com.example.bookingappassignment.utils.DistanceCalculator
 import javax.inject.Inject
 
 class TaxiRepositoryImpl @Inject constructor(

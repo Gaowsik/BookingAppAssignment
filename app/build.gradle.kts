@@ -37,6 +37,11 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -52,6 +57,7 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.hilt.common)
     implementation(libs.play.services.location)
+    implementation(libs.play.services.maps)
     kapt(libs.dagger.hild.android.compiler)
     kapt(libs.persistence.room.compiler)
 

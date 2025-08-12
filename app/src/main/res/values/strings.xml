@@ -3,4 +3,9 @@
     <string name="title_alert">Alert!</string>
     <string name="action_ok">OK</string>
     <string name="action_cancel">Cancel</string>
+    <string name="action_book_now">Book Now</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_setting">Go to Setting</string>
+    <string name="action_no">No</string>
+    <string name="msg_permission_location">It is important to provide location permission</string>
 </resources>
