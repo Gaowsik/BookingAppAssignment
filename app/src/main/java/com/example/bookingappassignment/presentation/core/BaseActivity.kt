@@ -15,8 +15,6 @@ open class BaseActivity : AppCompatActivity() {
 
     var mCurrentShowingAlert: AlertDialog? = null
     private var mProgressDialog: Dialog? = null
-    private var mNetworkStatusRelatedAlertDialog: AlertDialog? = null
-    private var mWarningRelatedSnackBar: Snackbar? = null
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
@@ -26,7 +24,6 @@ open class BaseActivity : AppCompatActivity() {
     private fun init() {
         initProgressDialog()
     }
-
 
 
     private fun initProgressDialog() {
