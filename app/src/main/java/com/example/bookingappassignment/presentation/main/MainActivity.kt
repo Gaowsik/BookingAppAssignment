@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.bookingappassignment.R
 import com.example.bookingappassignment.data.model.Driver
 import com.example.bookingappassignment.databinding.ActivityMainBinding
+import com.example.bookingappassignment.presentation.booking.BookingActivity
 import com.example.bookingappassignment.presentation.core.BaseActivity
 import com.example.bookingappassignment.utils.collectLatestLifeCycleFlow
 import com.example.bookingappassignment.utils.permission.IGetPermissionListener
@@ -57,6 +58,7 @@ class MainActivity : BaseActivity(), IGetPermissionListener, OnMapReadyCallback 
         resultLauncher = setResultLauncher()
         setUpMapFragment()
         checkLocationPermission()
+        setUpListener()
         setUpObservers()
         loadMapData()
     }
@@ -97,6 +99,17 @@ class MainActivity : BaseActivity(), IGetPermissionListener, OnMapReadyCallback 
         this.collectLatestLifeCycleFlow(viewModel.isDriverNearby) {
             binding.bookNowButton.isEnabled = it
         }
+    }
+
+    private fun setUpListener() {
+        binding.bookNowButton.setOnClickListener {
+            navigateToBookingScreen()
+        }
+    }
+
+    private fun navigateToBookingScreen() {
+        val intent = Intent(this, BookingActivity::class.java)
+        startActivity(intent)
     }
 
 
