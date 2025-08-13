@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookingAppAssignment">
         <activity
+            android:name=".presentation.booking.BookingActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.main.MainActivity"
             android:exported="true">
             <intent-filter>
