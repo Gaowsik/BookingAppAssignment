@@ -5,4 +5,5 @@ plugins {
     alias(libs.plugins.dagger.hilt.android) apply false
     alias(libs.plugins.google.service) apply false
     alias(libs.plugins.safeargs) apply false
+    alias(libs.plugins.google.map.secret) apply false
 }

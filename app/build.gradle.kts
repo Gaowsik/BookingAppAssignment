@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -5,9 +7,17 @@ plugins {
     id(libs.plugins.dagger.hilt.android.get().pluginId)
     id(libs.plugins.google.service.get().pluginId)
     id(libs.plugins.safeargs.get().pluginId)
+    alias(libs.plugins.google.map.secret) apply false
+}
+
+val localProperties = Properties()
+val localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localProperties.load(localPropertiesFile.inputStream())
 }
 
 android {
+
     namespace = "com.example.bookingappassignment"
     compileSdk = 36
 
@@ -19,6 +29,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders["MAPS_API_KEY"] = localProperties.getProperty("MAPS_API_KEY")
     }
 
     buildTypes {
@@ -42,6 +53,11 @@ android {
         viewBinding = true
         dataBinding = true
     }
+    buildFeatures {
+        buildConfig = true
+    }
+
+
 }
 
 dependencies {

@@ -8,4 +8,6 @@
     <string name="action_setting">Go to Setting</string>
     <string name="action_no">No</string>
     <string name="msg_permission_location">It is important to provide location permission</string>
+    <string name="msg_you_are_here">You are here</string>
+    <string name="msg_driver">Driver: %1$s</string>
 </resources>

@@ -4,8 +4,8 @@ import com.example.bookingappassignment.data.model.Driver
 
 object DriverDataSource {
     val drivers = listOf(
-        Driver("Driver A", 13.068500, 80.234938),
-        Driver("Driver B", 13.062306, 80.231172),
-        Driver("Driver C", 13.071086, 80.230709)
+        Driver("Driver A", 6.870122109443395, 79.86406760587627),
+        Driver("Driver B", 6.876945914495351, 79.86042108668471),
+        Driver("Driver C", 6.873188937969406, 79.86629890969051)
     )
 }
