@@ -10,4 +10,7 @@
     <string name="msg_permission_location">It is important to provide location permission</string>
     <string name="msg_you_are_here">You are here</string>
     <string name="msg_driver">Driver: %1$s</string>
+    <string name="msg_empty_field">Please fill all the details</string>
+    <string name="msg_invalid_mobile_number">Invalid Mobile number</string>
+    <string name="msg_success">Success</string>
 </resources>

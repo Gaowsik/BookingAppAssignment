@@ -133,20 +133,23 @@
                         android:hint="Booking Data and time"
                         android:inputType="textCapSentences" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_xsmall"
+
+                    android:background="@drawable/button_bg"
+
+                    android:padding="@dimen/padding_micro"
+                    android:text="Book"
+                    android:textAllCaps="true" />
             </LinearLayout>
+
+
         </com.google.android.material.card.MaterialCardView>
 
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnBook"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/padding_micro"
-            android:layout_marginStart="@dimen/padding_xsmall"
-            android:layout_marginTop="@dimen/padding_xsmall"
-            android:layout_marginEnd="@dimen/padding_xsmall"
-            android:background="@drawable/button_bg"
-            android:text="Book"
-            android:textAllCaps="true" />
     </LinearLayout>
 </ScrollView>
