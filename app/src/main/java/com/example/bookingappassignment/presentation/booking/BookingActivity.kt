@@ -14,7 +14,7 @@ import com.example.bookingappassignment.presentation.core.BaseActivity
 import com.example.bookingappassignment.presentation.main.MainViewModel
 import com.example.bookingappassignment.utils.collectLatestLifeCycleFlow
 import com.example.bookingappassignment.utils.getCurrentTimeDate
-import com.example.bookingappassignment.utils.showDateTimePicker
+import com.example.bookingappassignment.utils.showSingleDateTimePicker
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import dagger.hilt.android.AndroidEntryPoint
@@ -89,7 +89,7 @@ class BookingActivity : BaseActivity() {
 
     private fun setUpListeners() {
         binding.etTripTime.setOnClickListener {
-            showDateTimePicker(this, supportFragmentManager) { formattedDateTime ->
+            showSingleDateTimePicker(this) { formattedDateTime ->
                 binding.etTripTime.setText(formattedDateTime)
             }
         }
