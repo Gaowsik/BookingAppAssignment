@@ -61,6 +61,7 @@ class MainActivity : BaseActivity(), IGetPermissionListener, OnMapReadyCallback 
         setUpListener()
         setUpObservers()
         loadMapData()
+        binding.bookNowButton.isEnabled = true
     }
 
     private fun bindUI() {
@@ -97,7 +98,7 @@ class MainActivity : BaseActivity(), IGetPermissionListener, OnMapReadyCallback 
         }
 
         this.collectLatestLifeCycleFlow(viewModel.isDriverNearby) {
-            binding.bookNowButton.isEnabled = it
+
         }
     }
 
