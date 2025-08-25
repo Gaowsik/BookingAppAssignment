@@ -91,6 +91,7 @@ dependencies {
     implementation(libs.firebase.messaging)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation(libs.singledateandtimepicker)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
